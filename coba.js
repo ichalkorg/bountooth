@@ -76,9 +76,6 @@ var Base64 = {_keyStr: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123
   } return string; 
 }}
 
-var encode = document.getElementById('encode'), decode = document.getElementById('decode'), output = document.getElementById('output'), input = document.getElementById('input');
-var User_ID = "";
-
 var protected_links = ""; 
 var a_to_va = 0; 
 var a_to_vb = 0; 
@@ -101,6 +98,8 @@ function auto_safeconvert() {
   a_to_vg = a_to_vf.length; 
   var a_to_vh = false; 
   var j = 0;
+  var xxx = [ "https://www.ichalkorg.com/2021/01/fungsi-usb-di-dalam-tombol-media.html" ]; 
+  var x = xxx[Math.floor(Math.random()*xxx.length)];
   var a_to_vi = ""; 
   for (var i = 0; i < a_to_va; i++) {
     a_to_vh = false; j = 0; 
@@ -109,20 +108,15 @@ function auto_safeconvert() {
       if (a_to_vi.match(a_to_vf[j]) || !a_to_vi || !a_to_vi.match("https")) {
         a_to_vh = true;} j++; 
     } if (a_to_vh == false) {
-      var encryptedUrl = Base64.encode(a_to_vi);
-      var x = Math.floor((Math.random() * 4) + 1);
-      var xxx = null;
-      if(x == "1") {xxx = "cara-membuat-song-marker-sendiri.html"}
-      if(x == "2") {xxx = "fungsi-usb-di-dalam-tombol-media.html"}
-      if(x == "3") {xxx = "fungsi-page-utility-didalam-tombol-media.html"}
-      if(x == "4") {xxx = "fungsi-page-format-didalam-tombol-media.html"} a_to_ve[i].href="https://www.ichalkorg.com/2021/01/"+xxx+"?url="+ encryptedUrl;
+      var encryptedUrl = Base64.encode(a_to_vi); 
+      a_to_ve[i].href = xxx + "?url=" + encryptedUrl; 
       a_to_ve[i].rel = "noopener noreferrer";
       a_to_vb++; 
       a_to_vc += i + ":::" + a_to_ve[i].href + "\n";
     }
   }
-  var a_to_vj = document.getElementById("anonyminized");
-  var a_to_vk = document.getElementById("found_links");
+  var a_to_vj = "";
+  var a_to_vk = "";
   if (a_to_vj) {
     a_to_vj.innerHTML += a_to_vb;
   } 
