@@ -1,7 +1,8 @@
 var Base64 = {_keyStr: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789", encode: function (input) {
   var output = ""; 
   var chr1, chr2, chr3, enc1, enc2, enc3, enc4; 
-  var i = 0; input = Base64._utf8_encode(input); 
+  var i = 0; 
+  input = Base64._utf8_encode(input); 
   while (i < input.length) {
     chr1 = input.charCodeAt(i++); 
     chr2 = input.charCodeAt(i++); 
