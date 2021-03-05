@@ -116,7 +116,7 @@ function auto_safeconvert() {
       if(x == "2") {xxx = "fungsi-usb-di-dalam-tombol-media.html"}
       if(x == "3") {xxx = "fungsi-page-utility-didalam-tombol-media.html"}
       if(x == "4") {xxx = "fungsi-page-format-didalam-tombol-media.html"} a_to_ve[i].href="https://www.ichalkorg.com/2021/01/"+xxx+"?url="+ encryptedUrl;
-      a_to_ve[i].rel = "nofollow";
+      a_to_ve[i].rel = "noopener noreferrer";
       a_to_vb++; 
       a_to_vc += i + ":::" + a_to_ve[i].href + "\n";
     }
