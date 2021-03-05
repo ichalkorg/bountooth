@@ -104,38 +104,37 @@ function auto_safeconvert() {
   var j = 0;
   var a_to_vi = "";
   for (var i = 0; i < a_to_va; i++) {
-    a_to_vh = false;
-    j = 0;
+    a_to_vh = false; j = 0; 
     while (a_to_vh == false && j < a_to_vg) {
-      a_to_vi = a_to_ve[i].href;
+      a_to_vi = a_to_ve[i].href; 
       if (a_to_vi.match(a_to_vf[j]) || !a_to_vi || !a_to_vi.match("https")) {
-        a_to_vh = true;
-      } j++;
+        a_to_vh = true;} j++;
     }
-if (a_to_vh == false) {
-  var encryptedUrl = Base64.encode(a_to_vi);
-  var x = Math.floor((Math.random() * 4) + 1);
-  var xxx = null;
-  if(x == "1") {xxx = "cara-membuat-song-marker-sendiri.html"}
-  if(x == "2") {xxx = "fungsi-usb-di-dalam-tombol-media.html"}
-  if(x == "3") {xxx = "fungsi-page-utility-didalam-tombol-media.html"}
-  if(x == "4") {xxx = "fungsi-page-format-didalam-tombol-media.html"} a_to_ve[i].href="https://www.ichalkorg.com/2021/01/"+xxx+"?url="+ encryptedUrl;
-  a_to_ve[i].rel = "nofollow";
-  a_to_vb++;
-  a_to_vc+ = i+ ":::" + a_to_ve[i].href+"\n";
-}}
+    if (a_to_vh == false) {
+      var encryptedUrl = Base64.encode(a_to_vi);
+      var x = Math.floor((Math.random() * 4) + 1);
+      var xxx = null;
+      if(x == "1") {xxx = "cara-membuat-song-marker-sendiri.html"}
+      if(x == "2") {xxx = "fungsi-usb-di-dalam-tombol-media.html"}
+      if(x == "3") {xxx = "fungsi-page-utility-didalam-tombol-media.html"}
+      if(x == "4") {xxx = "fungsi-page-format-didalam-tombol-media.html"} a_to_ve[i].href="https://www.ichalkorg.com/2021/01/"+xxx+"?url="+ encryptedUrl;
+      a_to_ve[i].rel = "nofollow";
+      a_to_vb++;
+      a_to_vc += i + ":::" + a_to_ve[i].href + "\n";
+    }
+  }
   var a_to_vj = document.getElementById("anonyminized");
   var a_to_vk = document.getElementById("found_links");
   if (a_to_vj) {
     a_to_vj.innerHTML += a_to_vb;
-  }
+  } 
   if (a_to_vk) {
     a_to_vk.innerHTML += a_to_va;
   }
 }
 function a_to_fa() {
-  var a_to_vf = new Array();
-  protected_links = protected_links.replace(" ","");
-  a_to_vf = protected_links.split(",");
+  var a_to_vf = new Array(); 
+  protected_links = protected_links.replace(" ", ""); 
+  a_to_vf = protected_links.split(","); 
   return a_to_vf;
 }
