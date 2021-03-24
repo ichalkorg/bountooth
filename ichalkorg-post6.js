@@ -19,7 +19,7 @@ var a_to_ve="";var a_to_vf=new Array();var a_to_vg=0;a_to_ve=document.getElement
 j++;}
 if(a_to_vh==false)
 {var encryptedUrl=Base64.encode(a_to_vi);
-a_to_ve[i].href="https://www.ichalkorg.com/2021/03/spesifikasi-korg-pa600-indonesian.html?url="+ encryptedUrl;
+a_to_ve[i].href="https://www.ichalkorg.com/2021/01/spesifikasi-korg-pa600-indonesia-version.html?url="+ encryptedUrl;
 a_to_ve[i].rel="nofollow";a_to_vb++;a_to_vc+=i+":::"+ a_to_ve[i].href+"\n";}}
 var a_to_vj=document.getElementById("anonyminized");
 var a_to_vk=document.getElementById("found_links");
